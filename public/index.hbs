@@ -1,0 +1,15 @@
+<html>
+    <style>
+        .head_msg {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+    </style>
+    <body>
+        {{#if account}}
+        <h2 class="head_msg">Currently logged in as {{account}}</h2>
+        {{else}}
+        <h2 class="head_msg">Login <a href="/login">here</a></h2>
+        {{/if}}
+    </body>
+</html>
