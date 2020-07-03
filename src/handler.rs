@@ -6,7 +6,6 @@ pub mod account;
 
 use mysql::*;
 use rocket::*;
-use mysql;
 use mysql::prelude::*;
 use handlebars::Handlebars;
 use std::collections::HashMap;
@@ -20,7 +19,6 @@ pub struct Webserver {
 }
 
 #[derive(request::FromForm)]
-#[allow(dead_code)]
 struct UserLoginForm {
     userid: String,
     user_pass: String
